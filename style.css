@@ -1,0 +1,52 @@
+@charset "UTF-8";
+body{
+    background: url(img/linux.jpg) no-repeat ;
+    background-color:blanchedalmond;
+}
+h1{
+    padding-top:2vh;
+    background-color: #fafafa;
+    width: 70vw;
+    height: 6vh;
+    font-family: 'Noto Sans JP', sans-serif;
+    color:cornflowerblue;
+}
+
+div{
+    border-width: medium;
+    border-style: double;
+    text-align: justify;
+    width: 50vw;
+    margin-left: 20px;
+    background-color:coral;
+}
+div h3{
+    border: thin dotted ;
+    height: 10px;
+    padding:17px 5px 30px 17px;
+}
+div p{
+    padding:0px 17px 17px 17px;
+
+    line-height: 1.7;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+div h2{
+    text-align: left;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 2rem;
+    color: forestgreen;
+}
+
+ul,ol{
+    list-style-type:armenian;
+    line-height: 1.7;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 100%;
+    color: blue;
+}
+p{
+    border-bottom: thick double yellow;
+}
