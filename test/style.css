@@ -12,7 +12,7 @@ h1{
     color:cornflowerblue;
 }
 
-div{
+div.geekten{
     border-width: medium;
     border-style: double;
     text-align: justify;
@@ -39,14 +39,65 @@ div h2{
     color: forestgreen;
 }
 
-ul,ol{
-    list-style-type:armenian;
+ul{
     line-height: 1.7;
     font-weight: bold;
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 100%;
     color: blue;
 }
+
+div_4 li{
+    list-style-position:outside;
+    background-color: gainsboro;
+    font-weight: bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 100%;
+    color: chocolate;
+}
 p{
     border-bottom: thick double yellow;
+}
+ h1.test{
+    margin-left: 3px;
+    background:none;
+    color: red;
+}
+
+h1#blue{
+    margin-left: 3px;
+    background:none;
+    color: blue;
+}
+
+.list_test-wrap{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.list_test::before{
+    content:"";
+    width:10px;
+    height: 2px;
+    display:inline-block;
+    background-color: coral;
+    top:-4px;
+    margin-right:5px;
+    position:relative;
+}
+
+div.container{
+    height: 70vh;
+    width: 100%;
+    background:skyblue;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:3vw;
+    justify-content: center;
+    padding:50px 0 50px 0;
+}
+div.item{
+background-color:#fff;
+
 }
