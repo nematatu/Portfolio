@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+section{
+    height:100vh;
+    scroll-snap-align: start;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hero{
+    background-image:url(images/bread1.jpg);
+    position:relative;
+}
+.hero::before{
+    position:absolute;
+    content:"";
+    top:0; bottom:0;
+    right:0; left:0;
+    background-color: black;
+    opacity:.3;
+}
+.hero div{
+    color:#fef;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+.title{
+    font-family: 'Cutive Mono',serif;
+    font-size:20rem;
+    margin-bottom: 2rem;
+    font-weight: normal;
+}
+.content{
+    font-family: "Noto Serif Japanese ",serif;
+    font-size:2rem;
+    font-weight: normal;
+}
+.menu{
+    background-image: url(images/bread2.jpg);
+}
+h2.title{
+    padding: 3rem 0 0 10rem;
+    font-size: 14rem;
+}
+.menu_ul{
+    background-color:rgba(255,255,255,.4);
+    margin-left:20%;
+    list-style-type: none;
+    width:30%;
+    padding:1rem;
+    border:1px rgba(255,255,255,.4);
+    border-radius: 2%;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:2rem;
+}
+.Container{
+    overflow:auto;
+    scroll-snap-type:y proximity;
+    height: 100vh;
+}
+@media(max-width:700px){
+    .title{
+        font-size:6rem;
+        margin-top: 1rem;
+        
+    }
+}
