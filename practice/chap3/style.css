@@ -1,4 +1,7 @@
 @charset "UTF-8";
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(images/summer_bg.jpg);
     background-size: cover;
@@ -20,12 +23,34 @@ body{
     header{
         color:#fff;
         text-align: center;
-        background:url(images/arch_bg.png) ;
         width: 100%;
         height: 170px;
-        background-size: cover;
         padding-top: 3rem;
-    
+        animation:chg-bg 16s infinite;
+        background-size: contain;
+        background-repeat: repeat;
+    }
+    @keyframes chg-bg{
+        0%{
+            background-image: url(images/arch_bg.png);
+
+        }
+        20%{
+            background-image: url(images/arch_bg2.jpg) ;
+        }
+        40%{
+            background-image: url(images/arch-bg3.png);
+        }
+        60%{
+            background-image: url(images/ii.png);
+        }
+        80%{
+            background-image: url(images/花鳥風月.png);
+        }
+        100%{
+            background-image: url(images/arch_bg.png);
+
+        }
 
     }
     /*main*/
@@ -41,6 +66,19 @@ body{
         background-repeat:repeat;
         
         margin-bottom:1.5rem ;
+        position: relative;
+        animation:recommend-animation 2s infinite;
+    }
+    @keyframes recommend-animation{
+        0%,50%,100%{
+            top:0;
+        }
+        25%{
+            top:-.5rem;
+        }
+        75%{
+            top:-.5rem;
+        }
     }
 
         .post-title h2{
@@ -176,7 +214,7 @@ body{
         font-family:'Zen Kaku Gothic New',cursive;
         font-size:1.25rem;
         text-align: center;
-        background-color:#ccc;
+        background:linear-gradient(90deg,#CBD5EE,#EEE);
         padding: 19px;
 
     }
@@ -258,18 +296,132 @@ body{
     justify-content:center;
     display: flex;
     position:relative;
-    top:-17px;
+    margin-bottom:7px;
+
 }
 .footer-nav img{
-    width: 32px;
-    height: 32px;
+    width: 45px;
+    height: 45px;
 }
 .footer-nav li{
-    margin-right: 30px;
+    margin:0 15px;
+    position: relative;
+    top:0px;
+}
+.footer-nav li:hover{
+    top:-10px;
+    transition: top .1s;
 }
 .popular-post{
     position:sticky;
     top:1rem;
+}
+:root{
+    --main_color:black;
+    --sub_color:purple;
+    --gradient:linear-gradient(var(--main_color),var(--sub_color)) 
+}
+.nav{
+    
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background: var(--gradient);
+    padding: 1.3vh 3vw;
+}
+    .nav-title{
+        position:sticky;
+        top:0;
+        z-index: 3;
+    
+    }
+    
+.nav a{
+    text-align: center;
+    text-decoration:none;
+    color:white;
+    font-size: 1.7rem;
+    font-family: "Zen Kaku Gothic New",sans-serif;
+    font-weight: 700;
+    display: block;
+    padding: auto auto;
+}
+.nav a:hover{
+    color: #000;
+}
+.nav li:hover{
+    background:#ff6;
+    
+    
+}
+.nav li{
+    background: transparent;
+    width:5%;
+    margin: 0 10%;
+}
+.transition{
+    transition:background .3s;
+}
+.transition-2{
+    transition: color .3s;
+}
+.timeline{
+    background:linear-gradient(90deg,#CBD5EE,#EEE);
+    background-size: cover;
+    min-height: 70vh;
+    padding: rem 7rem;
+    font-family: "Zen Kaku Gothic New",sans-serif;
+    clip-path: polygon(0 0,100% 10%,100% 90%, 0 100%);
+}
+        
+.timeline-title{
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: left;
+    padding-top:3rem;
+}
+.timeline-ul{
+    list-style-type:none ;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Zen Kaku Gothic New",sans-serif;
+    padding-left: 8rem;
+}
+.timeline li{
+    border-left: 2px solid #fff;
+    padding:0 0  2.5rem 2.3rem;
+    position: relative;
+}
+.timeline li::before{
+    content:"";
+    border-radius: 50%;
+    width:19px;
+    height: 19px;
+    background: linear-gradient(90deg,#CBD5EE,#EEE);
+    display: inline-block;
+    position:absolute;
+    top:10px;
+    left:-10.57px;
+    border:#fff 2px solid;
+}
+.timeline-date{
+    text-align: left;
+    padding:.2rem 0; 
+    font-size: 1.2rem;
+}
+.timeline-content{
+    width:74%;
+    text-decoration: none;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.3rem;
+}
+.timeline-content::before{
+    content:"";
 }
 /*
 Mobile First

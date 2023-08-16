@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body{
+    font-family:"Zen Kaku Gothic New",sans-serif;
+}
+.home-hero{
+    background:url(images/DSC_0413.jpg) no-repeat right top /70vw auto ;
+    min-height: 100vh;
+    padding:5.5rem 1rem 3rem;
+}
+.home-hero h2{
+    background:rgba(255,255,255,.5);
+    margin:8vw 0 9vw;
+    padding:1rem;
+    display: inline-block;
+    font-size: 4rem;
+}
+.home-hero p{
+    background:rgba(255,255,255,.5);
+    padding:1rem 0;
+    font-size:2rem;
+    margin-bottom:2rem;
+    width: 55vw;
+}
+a.btn{
+    text-decoration: none;
+    display: inline-block;
+    color:white;
+    background-color: darkslategray;
+    width:180px;
+    height:50px ;
+    border-radius: 6px;
+    text-align: center;
+    padding:10px ;
+}
+a.btn:hover{
+    color:white;
+    background-color: black;
+}
+.ct-label{
+    font-size: 1rem;
+    fill:#fff;
+}
+.ct-series-a .ct-slice-pie{
+    fill:#2d3374;
+}
+.ct-series-b .ct-slice-pie{
+    fill:#3a7edf;
+}
+.ct-series-c .ct-slice-pie{
+    fill:#9bcbf8;
+}
+.ct-series-d .ct-slice-pie{
+    fill:#bbb;
+}
+.ct-bar{
+    stroke-width: 15%;
+}
+.ct-series-a .ct-bar{
+    stroke: #2d3374;
+}
+#myChart{
+    width: 400px;
+    height: 400px;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-text{
+    width: 40%;
+}
+.home-chart{
+    width: 40%;
+    height: 40%;
+}
+.flex-reverse{
+    flex-direction:row-reverse ;
+}
+.brown-bg{
+    padding: 7% 0;
+    background-color: tan;
+}
