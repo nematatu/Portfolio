@@ -48,6 +48,7 @@ body{
         width: 60vw;
         height: 70vh;
         backdrop-filter: blur(20px);
+        transform: translateZ(0);
         border:#ccc 2px solid;
         border-radius: 2rem;
         font-family: "Space Mono";
@@ -71,6 +72,9 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .credit{
+        font-size: .5vw;
     }
     .tile_bar p{
     }
