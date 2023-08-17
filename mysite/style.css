@@ -137,7 +137,6 @@ width: 90%;
     }
     .tile_link{
         display: flex;
-        flex-direction: column;
         justify-content: center;
     }
     .tile_link li{
@@ -198,7 +197,7 @@ width: 90%;
         display: flex;
     }
     .tile_arrow{
-        font-size: 1.3vw;
+        font-size: 2vw;
     }
     .tile_flashing{
         width: .5vw;
@@ -217,39 +216,67 @@ width: 90%;
     .pages{
     }
     .pages_title{
-
+        padding-left:2rem ;
+        font-family: "Space Mono";
         font-weight: bold;
         font-size: 4rem;
         text-align: left;
         padding-top:3rem;
     }
     .works{
-
+        background:wheat;
     }
     .works_title{
-        color:#fff;
+        color:#555;
     }
 .item img{
+    background:#000;
     max-width: 100%;
-    height: auto;
+    height: 200px;
+    width:400px;
+    object-fit: contain;
+}
+.item_date{
+    text-align: right;
+
 }
 .item{
+        box-shadow: 10px 10px 0px #000 ;
+    border:#000 solid 2px;
     border-radius: 10px;
     background: #edf;
     padding: 15px;
     text-align: center;
 }
+.item_title{
+    font-weight: bold;
+    font-size: 30px;
+}
+.item_tag{
+    display: flex;
+    margin:12px 0 0;
+}
+.item_tag p{
+    color:#555;
+    margin:0 5px;
+    border-bottom:solid 2px #555;
+}
+.item p{
+    font-family: "Space Mono";
+}
     .grid{
+        padding:5rem;
         display:grid;
+        gap:60px;
         grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-        gap: 10px;
     }
     .timeline{
-        background:linear-gradient(90deg,#CBD5EE,#EEE);
-    clip-path: polygon(0 0,100% 10%,100% 90%, 0 100%);
+        background:rgb(26,32,35);
 }
 
-
+.timeline-title{
+    color: rgb(206,210,153);
+}
 .timeline-ul{
     list-style-type:none ;
     height: 40rem;
@@ -257,31 +284,34 @@ width: 90%;
     flex-direction: column;
     justify-content: center;
     font-family: "Zen Kaku Gothic New",sans-serif;
-    padding-left: 8rem;
+    margin:0 auto;
 }
 .timeline li{
     border-left: 2px solid #fff;
     padding:0 0  2.5rem 2.3rem;
     position: relative;
+    
 }
 .timeline li::before{
     content:"";
     border-radius: 50%;
-    width:19px;
-    height: 19px;
+    width:25px;
+    height: 25px;
     background: linear-gradient(90deg,#CBD5EE,#EEE);
     display: inline-block;
     position:absolute;
     top:10px;
-    left:-10.57px;
+    left:-11px;
     border:#fff 2px solid;
 }
 .timeline-date{
+    color: rgb(206,210,153);
     text-align: left;
     padding:.2rem 0; 
     font-size: 1.2rem;
 }
 .timeline-content{
+    color:#fff;
     width:74%;
     text-decoration: none;
     padding-left: 2rem;
@@ -295,7 +325,7 @@ width: 90%;
 }
 footer{
   padding:30px 0;
-  background-color: brown;
+  background-color: rgb(26,32,35);
   display: flex;
   flex-direction: column;
 }
@@ -361,6 +391,20 @@ Mobile First
     .footer-nav img{
         width:20px;
         height: 20px;
+    }
+    .tile_arrow{
+        font-size: 5vw;
+    }
+    .tile_flashing{
+        width:1.3vw;
+        height:3.5vh;
+    }
+    .tile_konsole{
+        margin: 0;
+    }
+    .tile_link{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media(max-width:550px){
