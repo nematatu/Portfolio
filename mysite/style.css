@@ -343,13 +343,14 @@ Mobile First
         min-width: 110px;
     }
     .tile_link a{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .tile_main{
         width: 100%;
     }
     .tile_title{
         font-size:4vw;
+        margin:0;
     }
     .dotted{
         width:100%;
@@ -361,6 +362,7 @@ Mobile First
 @media(max-width:550px){
     .tile_title{
         font-size:5vw;
+        margin :0;
     }
     .tile_ul p{
         font-size:3vw;
