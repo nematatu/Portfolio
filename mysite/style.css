@@ -3,15 +3,15 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(images/summer_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background:#555;
+
 }
 
     /*header*/
     header{
         color:#fff;
         width: 100%;
+        /*min-width: 900px;*/
         min-height: 100vh;
         background-size: cover;
         animation:chg-bg 16s infinite;
@@ -45,15 +45,15 @@ body{
     .linux_tile{
         margin:0 auto;
         background: rgba(90,50,50,.3);
-        width: 50vw;
-        height: 60vh;
+        width: 60vw;
+        height: 70vh;
         backdrop-filter: blur(20px);
         border:#ccc 2px solid;
         border-radius: 2rem;
         font-family: "Space Mono";
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content:space-around;
         position: relative;
         padding: 2rem;
         box-shadow: 10px 10px 0px #000 ;
@@ -94,8 +94,8 @@ body{
         content:"";
         display: inline-block;
         background:rgb(206, 65, 65);
-        width:1.3rem;
-        height: 1.3rem;
+        width:1.3vw;
+        height: 1.3vw;
         border-radius: 50%;
     }
 
@@ -104,8 +104,8 @@ body{
         display: inline-block;
         background:#74ff49;
 
-        width:1.3rem;
-        height: 1.3rem;
+        width:1.3vw;
+        height: 1.3vw;
         border-radius: 50%;
     }
     
@@ -113,47 +113,48 @@ body{
         content:"";
         display: inline-block;
         background:#bedf4a;
-        width:1.3rem;
-        height: 1.3rem;
+        width:1.3vw;
+        height: 1.3vw;
         border-radius: 50%;
     }
     .tile_bio{
         padding:0 2rem;
         display: flex;
-        justify-content: space-evenly;
-    }
-    .tile_bio img{
-        width:20rem;
-        height: 20rem;
+        justify-content: space-around;
     }
     .tile_image{
-        text-align: center;
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     .tile_image img{
-        
+width: 90%;
     }
     .tile_link{
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
     .tile_link li{
         list-style-type: none;
     }
     .tile_link a{
-        font-size: 1rem;
+        font-size: 1vw;
         border-bottom: yellow 2px solid;
         color:#fff;
         text-decoration: none;
-        margin:0 30px;
+        margin:0 .5vw;
     }
     .tile_main{
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: left;
     }
     .tile_title{
-        font-size: 3em;
+        font-size: 2.3vw;
         position: relative;
         color:yellow;
         font-weight: bold;
@@ -166,7 +167,7 @@ body{
     }*/
     .dotted{
         margin:1rem 0;
-        width:20rem;
+        width:20vw;
         height:.15rem;
         background:repeating-linear-gradient(90deg,#fff, #fff 1rem, transparent 1rem,transparent 1.5rem);
         display:inline-block;
@@ -178,7 +179,7 @@ body{
     .tile_ui li{
     }
     .tile_ul p{
-        font-size: 1.2rem;
+        font-size: 1.2vw;
     }
     .row{
         margin:.4rem 0;
@@ -189,15 +190,15 @@ body{
         color:yellow;
     }
     .tile_konsole{
-        margin-left: 2.3rem;
+        margin-left: 2.3vw;
         display: flex;
     }
     .tile_arrow{
-        font-size: 30px;
+        font-size: 1.3vw;
     }
     .tile_flashing{
-        width: 12px;
-        height: 26px;
+        width: .5vw;
+        height: 1.3vw;
         margin: auto 0;
         animation:0.7s flashing infinite;
     }
@@ -210,10 +211,6 @@ body{
         
     }
     .pages{
-
-        background-size: cover;
-        min-height: 100vh;
-        padding: 5rem 7rem;
     }
     .pages_title{
 
@@ -223,28 +220,25 @@ body{
         padding-top:3rem;
     }
     .works{
-        background:#fff;
+
     }
-.item div{
-    width: 24.5rem;
-    height: 13rem;
-    background: #000;
-    text-align: center;
-}
+    .works_title{
+        color:#fff;
+    }
 .item img{
-    width: 20rem;
-    height: 13rem;
+    max-width: 100%;
+    height: auto;
+}
+.item{
+    border-radius: 10px;
+    background: #edf;
+    padding: 15px;
     text-align: center;
 }
     .grid{
-        text-align: center;
         display:grid;
-        gap:5rem;
-        padding:0 auto;
-        grid-template-columns: repeat(auto-fit,minmax(19rem,1fr));
-        margin-top: 6%;
-    
-        margin-bottom: 50px;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 10px;
     }
     .timeline{
         background:linear-gradient(90deg,#CBD5EE,#EEE);
@@ -315,8 +309,8 @@ footer p{
 
 }
 .footer-nav img{
-  width: 25px;
-  height: 25px;
+  width: 2vw;
+  height: 2vw;
 }
 .footer-nav li{
   margin:0 9px;
@@ -331,43 +325,5 @@ footer p{
 Mobile First
 ==================================================*/
 @media(max-width:600px){
-    .container{
-        padding:20px 15px ;
-        display:flex;
-        flex-direction: column;
-    }
-    main{
-        padding:0;
-        width: 100%;
-    }
-    .post-title h2{
-        padding:10px ;
-        font-size: 1.63rem;
-    }
-    .text-highlights{
-        font-size: 1.5rem;
-    }
-    div.post-content{
-        margin:2rem 0;
-        display:flex;
-        flex-direction: column;
-    }
-    .post-desc{
-        margin:20px 0;
-    }
-    blockquote{
-        padding:.75rem;
-    }
-    blockquote::before,blockquote::after{
-        width:20px;
-        height: 20px;
-    }
-    blockquote::before{
-        top:1px;
-        left: -5px;
-    }
-    blockquote::after{
-        bottom:1px;
-        right: -5px;
-    }
+
 }
