@@ -1,2 +1,2 @@
 # website
-https://nematatu.github.io/website/wcb_cafe/
+https://nematatu.github.io/website/mysite
