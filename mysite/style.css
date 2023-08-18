@@ -3,10 +3,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background:#555;
+    background:rgb(26,32,35);
 
 }
-
+article{
+    flex:1;
+}
     /*header*/
     header{
         color:#fff;
@@ -134,6 +136,18 @@ body{
     }
     .tile_image img{
 width: 90%;
+    }
+    .icon{
+        margin: 0 auto;
+        padding:auto 0;
+        width:20vw;
+        height: 20vw;
+        background: url(images/icon.jpg);
+        border: #fff 2px solid;
+        border-radius: 50%;
+        background-position: center;
+        background-size: contain;
+
     }
     .tile_link{
         display: flex;
@@ -275,16 +289,18 @@ width: 90%;
 }
 
 .timeline-title{
+    margin-bottom: 3rem;
     color: rgb(206,210,153);
 }
 .timeline-ul{
+    margin:  auto ;
+    width: 70%;;
     list-style-type:none ;
     height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-family: "Zen Kaku Gothic New",sans-serif;
-    margin:0 auto;
 }
 .timeline li{
     border-left: 2px solid #fff;
@@ -301,7 +317,7 @@ width: 90%;
     display: inline-block;
     position:absolute;
     top:10px;
-    left:-11px;
+    left:-14px;
     border:#fff 2px solid;
 }
 .timeline-date{
@@ -367,10 +383,15 @@ Mobile First
     .tile_image{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        width:100%;
+        margin-top: 2rem;;
     }
-    .tile_image img{
-        min-width: 110px;
+    .icon{
+        width: 14vw;
+       height: 14vw;
+    }
+    .tile_link{
     }
     .tile_link a{
         font-size: 3vw;
@@ -415,6 +436,14 @@ Mobile First
     .tile_ul p{
         font-size:3vw;
     }
+    .timeline-ul{
+        margin:auto;
+    }
+}
+@media(max-width:490px){
+    .timeline-ul{
+        margin:5rem;
+    }
 }
 @media(max-width:400px){
     .tile_image{
@@ -435,5 +464,13 @@ Mobile First
     }
     .tile_ul p{
         font-size:12px;
+    }
+    .timeline-ul{
+        margin-top: 10rem ;
+        margin-bottom: 10rem;
+    }
+    .icon{
+        width:15vw;
+        height:15vw;
     }
 }
