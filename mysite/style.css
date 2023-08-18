@@ -383,10 +383,9 @@ width: 90%;
     color: rgb(206,210,153);
 }
 .timeline-ul{
-    margin:  auto ;
+    margin:0  auto 2rem;
     width: 70%;;
     list-style-type:none ;
-    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -537,15 +536,23 @@ Mobile First
     }
 }
 @media(max-width:490px){
-
+    .timeline-ul{
+        justify-content: start;
+    }
     .timeline-date{
         font-size: .8rem;
     }
         .timeline-content{
         font-size: 1.3rem;
     }
+    .timeline-title{
+        font-size: 50px;
+    }
 }
 @media(max-width:400px){
+    .timeline-title{
+        font-size: 40px;
+    }
     .tile_image{
         width: 100%;
         display: flex;
