@@ -23,6 +23,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Lobster+Two&family=Noto+Sans+JP&family=Noto+Serif+JP:wght@200&family=Philosopher&family=Space+Mono&family=Zen+Kaku+Gothic+New&display=swap" rel="stylesheet">    
 </head>
     <body>
+        <div class="atom-spinner " id=loading>
+            <div class="spinner-inner">
+              <div class="spinner-line"></div>
+              <div class="spinner-line"></div>
+              <div class="spinner-line"></div>
+              <!--Chrome renders little circles malformed :(-->
+              <div class="spinner-circle">
+                &#9679;
+              </div>
+            </div>
+          </div>
         <article>
             <header>
                 <div class="linux_tile">
@@ -218,6 +229,8 @@
     </ul>
     <p><small>&copy;2023 amatatu.tech</small></p>
 </footer>
+<script src="script.js"></script>
+
     </body>
 </html>
 
