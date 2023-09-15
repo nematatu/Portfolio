@@ -1,2 +1,2 @@
 # website
-https://nematatu.github.io/website/mysite
+https://nematatu.github.io/Portfolio/mysite
